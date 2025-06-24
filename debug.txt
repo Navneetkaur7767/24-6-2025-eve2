@@ -1,0 +1,35 @@
+Reached delete_event.php
+Session started
+User Email: aman@gmail.com
+Raw Event ID: 23
+Sanitized Event ID: 23
+Session started
+User Email: aman@gmail.com
+Raw Event ID: 23
+Sanitized Event ID: 23
+Session started
+User Email: aman@gmail.com
+Raw Event ID: 23
+Sanitized Event ID: 23
+Session started
+User Email: aman@gmail.com
+Raw Event ID: 23
+Sanitized Event ID: 23
+Query: DELETE FROM events WHERE id=23 AND user_email='aman@gmail.com'
+Event Deleted
+Session started
+User Email: aman@gmail.com
+Raw Event ID: 24
+Sanitized Event ID: 24
+Query: DELETE FROM events WHERE id=24 AND user_email='aman@gmail.com'
+Event Deleted
+----- Edit Request Received -----
+Received ID: 18, New Title: ssssd
+Query: UPDATE events SET event_title = 'ssssd', editdate = NOW() 
+             WHERE id = 18 AND user_email = 'raman@gmail.com'
+✅ Event updated successfully.
+----- Edit Request Received -----
+Received ID: 22, New Title: bbbbbbbbbbbbbbb
+Query: UPDATE events SET event_title = 'bbbbbbbbbbbbbbb', editdate = NOW() 
+             WHERE id = 22 AND user_email = 'raman@gmail.com'
+✅ Event updated successfully.

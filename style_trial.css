@@ -1,0 +1,125 @@
+
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.cal-section
+{
+	padding: 30px 0;
+}
+.cal-outer
+{
+	/*	max-width: 600px;*/
+    margin: 0 auto;
+}
+.head-color{
+   background-color: antiquewhite;
+}
+.faded
+{
+	 pointer-events: auto !important;
+}
+.table-fixed
+{
+	table-layout: fixed !important;
+}
+.head-table
+{
+	margin-bottom: 0px;
+}
+.body-table
+{
+	margin-bottom: 0px;
+}
+td.today
+{
+	background-color: lightblue;
+}
+tr
+{
+	text-align: center;
+}
+
+table tbody td {
+   /* padding: 20px;
+    font-size: 18px;*/
+    width: 136.781px;
+    height: 112.828px;
+    overflow: hidden;             /* prevents content from escaping */
+    padding: 5px;                 /* adjust as needed */
+    vertical-align: top;          /* aligns content at top of cell */
+    box-sizing: border-box;
+}
+
+
+/*just added*/
+.day-number {
+   /* font-weight: bold;
+    margin-bottom: 5px;*/
+}
+
+.event-container {
+/*    margin-top: 5px;*/
+}
+/*just added*/
+/*css for event strip and edit and delete button in it*/
+/*.event-strip {
+
+			display:flex;
+			justify-content: center;
+			align-content: center;
+			width:100%;
+			max-width:100%;
+			background-color:yellow;
+			border-radius:4px;
+			margin-top: 4px;
+			overflow: hidden;
+
+}*/
+
+td.selected {
+    background-color: rgba(255, 230, 150, 0.7) !important;
+}
+
+ .event-strip {
+ 	pointer-events: auto; /*childs will get clicked*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    /* Key for positioning */
+    background-color: yellow;
+    border-radius: 4px;
+    margin-top: 4px;
+    overflow: hidden;
+    height: 24px;
+}
+
+
+.event-text{
+
+		 white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    margin-right: 8px;
+	    flex-grow: 1;
+	    font-size: 14px;
+		 font-weight: bold;
+}
+
+.event-actions	{
+	display: flex;
+    gap: 6px;
+    flex-grow: 0;
+}
+.event-actions button {
+
+    background: transparent;
+    border: none;
+}
+.dlt-btn
+{
+	color: red;
+}
