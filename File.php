@@ -236,3 +236,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
+
+function bindDragEvents(eventDiv, duration = null) {
+  if (eventDiv.classList.contains('drag-bound')) return; // prevent duplicate
+  eventDiv.classList.add('drag-bound');
+
+  const id = eventDiv.id.split('-')[1];
+  duration = duration || Math.round(parseFloat(eventDiv.style.width) / 185.5);
+
+  eventDiv.addEventListener('dragstart', e => {
+    e.dataTransfer.setData('text/plain', JSON.stringify({ eventId: id, duration }));
+  });
+}
